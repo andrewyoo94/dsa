@@ -78,4 +78,4 @@ def binary_search (arr,key)
     end
     
     return "Value not found in array!"
-end
+end 
