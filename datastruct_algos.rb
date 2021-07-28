@@ -92,3 +92,11 @@ def fib(n)
   end
   puts first_num
 end
+
+# Reverse String
+
+def reverse_string(str)
+  split_str = string.split("")
+  reversed = []
+  str.size.times { reversed << split_str.pop }
+end
