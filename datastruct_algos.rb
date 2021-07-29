@@ -118,3 +118,23 @@ def bubble_sort(a)
 
   return a
 end
+
+# Sort Zeros to the right
+
+def sort_zeros_right(a)
+  count = 0
+
+  for i in 0...a.length
+      if a[i] != 0
+          a[count] = a[i]
+          count += 1
+      end
+  end
+
+  while count < a.length
+      a[count] = 0
+      count += 1
+  end
+
+  return a
+end
