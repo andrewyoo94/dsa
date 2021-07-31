@@ -138,3 +138,20 @@ def sort_zeros_right(a)
 
   return a
 end
+
+
+# Linear Search Algorithm
+
+class Array
+  def linear_search(targeted_values)
+    i = 0
+    while i < self.length
+      if self[i] == targeted_values
+        return i
+      end
+      i += 1
+    end
+    
+    "Not found"
+  end
+end
