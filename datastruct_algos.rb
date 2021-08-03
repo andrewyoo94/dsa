@@ -155,3 +155,32 @@ class Array
     "Not found"
   end
 end
+
+
+# Search given element in sorted array
+
+def search(a,key)
+  lo=0
+  hi=a.length-1
+
+  while lo<=hi
+      mid=lo+(hi-lo)/2
+      if a[mid]==key
+          return mid
+      elsif a[mid]>=a[lo]
+          if (a[mid]>key && a[lo]<=key)
+              hi=mid-1
+          else
+              lo=mid+1
+          end
+      else
+          if (a[mid]<key && a[hi]>=key)
+              lo=mid+1
+          else
+              hi=mid-1
+          end
+      end
+  end
+  return -1
+  
+end
