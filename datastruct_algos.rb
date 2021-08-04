@@ -184,3 +184,20 @@ def search(a,key)
   return -1
   
 end
+
+
+# Find longest word
+
+def LongestWord(sen)
+  sen.split(/\W+/).max_by(&:length)
+      
+end
+
+# def LongestWord(sen)
+#   sen = sen.chars.select { |char| char =~ /[\w\s]/ }.join
+#   sen = sen.split(" ").max_by { |word| word.size }
+#   return sen 
+         
+# end
+
+
