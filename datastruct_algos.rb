@@ -201,3 +201,17 @@ end
 # end
 
 
+# Find Factorial
+
+def factorial(n)
+  return nil if n < 0
+  
+  fac = 1
+
+  while n > 0
+    fac *= n
+    n -= 1
+  end
+  
+  fac
+end
