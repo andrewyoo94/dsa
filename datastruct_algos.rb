@@ -248,3 +248,21 @@ def counting_sort(a=[9,8,7,6],min=0,max=10)
 
   return a
 end
+
+
+# Inorder Traversal
+
+def inorder_traversal(root)
+  arr = []
+
+  def traverse(node, arr)
+    unless node.nil?
+      traverse(node.left, arr)
+      arr.push(node.val)
+      traverse(node.right, arr)
+    end
+  end
+
+  traverse(root, arr)
+  arr
+end
