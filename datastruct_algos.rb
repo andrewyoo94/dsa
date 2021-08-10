@@ -266,3 +266,15 @@ def inorder_traversal(root)
   traverse(root, arr)
   arr
 end
+
+
+# Power of two
+
+def check_power(x)
+  
+  if x&(x-1)==0
+      print "#{x} is power of two"
+  else
+      print "#{x} is not power of two"
+  end
+end
