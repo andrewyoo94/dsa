@@ -295,3 +295,17 @@ def postorder_traversal(root)
   traverse(root, ans)
   ans
 end
+
+
+# Preorder Traversal
+
+def preorder_traversal(root)
+  result = []
+  return result if root.nil?
+
+  result << root.val
+  result += preorder_traversal(root.left) if root.left
+  result += preorder_traversal(root.right) if root.right
+
+  result
+end
