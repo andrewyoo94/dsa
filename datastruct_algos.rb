@@ -350,3 +350,24 @@ def insertion_sort(a)
   return a
 
 end
+
+
+# Binary Search
+
+def binary_search(array, key)
+  front = 0
+  back = array.length - 1
+  
+  while front <= back
+    middle = (front + back) / 2
+    return middle if array[middle] == key
+
+    if key < array[middle]
+      back = middle - 1
+    else
+      front = middle + 1
+    end
+  end
+  
+  nil
+end
