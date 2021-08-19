@@ -390,3 +390,20 @@ def fact(n)
    
    return num
 end
+
+
+# FizzBuzz
+
+def fizz()
+  (1..100).each do |i|
+      if(i%3==0 && i%5==0)
+          print "Fizz Buzz \n"
+      elsif(i%3==0)
+          print "Fizz \n"
+      elsif(i%5==0)
+          print "Buzz \n"
+      elsif
+          puts i
+      end
+  end
+end
