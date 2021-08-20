@@ -407,3 +407,18 @@ def fizz()
       end
   end
 end
+
+
+# Max Sum 
+  
+def max_sum(a)
+	current_max = a[0]
+	max_so_far = a[0]
+
+	for i in 1..a.size-1 do
+		current_max = [a[i],current_max+a[i]].max
+		max_so_far = [current_max,max_so_far].max
+	end	
+
+	return max_so_far
+end	
