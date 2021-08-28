@@ -578,3 +578,20 @@ def reverse(queue)
 
 	queue
 end
+
+
+# Duplicates in Array 
+
+def print_duplicates(a)
+  n=a.length
+  
+  for i in 0...n
+      if a[a[i].abs]<0
+        print "#{a[i].abs} "
+      else
+          a[a[i].abs]= -a[a[i].abs]
+      end
+  end
+
+  return
+end
