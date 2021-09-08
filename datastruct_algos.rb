@@ -594,4 +594,5 @@ def print_duplicates(a)
   end
 
   return
-end
+end 
+
