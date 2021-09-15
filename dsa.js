@@ -36,3 +36,23 @@ const removeDupes = (arr) => {
   
   return result;
 }
+
+
+// Find Sum Pairs
+
+const findSumPairs = (arr, value) => {
+  let sumsLookup = {};
+  let output = [];
+  
+  for(let i = 0; i < arr.length; i++) {
+    let targetVal = value - arr[i];
+    
+    if(sumsLookup[targetVal]) {
+      output.push([arr[i], targetVal]);
+    }  
+    
+    sumsLookup[arr[i]] = true;
+  }
+  
+  return output;
+}
